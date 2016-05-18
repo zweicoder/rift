@@ -41,7 +41,7 @@ function getFilesRecursively(dir, maxDepth = -1) {
 }
 
 cli.version('1.0.0')
-    .usage('[files...]')
+    .arguments('[files...]')
     .description('serves file(s)/directory specified. Defaults to current directory if none specified')
     .action((files) => {
         if (!files || files.length == 0) {
