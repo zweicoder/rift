@@ -9,10 +9,17 @@ Send files over your local network from the command line using [WebTorrent](http
 Open terminal at / `cd` to your current directory
 `$ cd <directory>`
 
-Open a rift
+Open a rift to your current directory
 ```
 $ rift .
 Seeding /home/pewpew/code/rift/files
+Torrenting now on 10.21.112.232:8080
+```
+
+Or select a few files
+```
+$ rift barney.jpg wallpapers/
+Seeding /home/pewpew/Pictures/barney.jpg,/home/pewpew/Pictures/wallpapers
 Torrenting now on 10.21.112.232:8080
 ```
 
