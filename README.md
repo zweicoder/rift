@@ -36,3 +36,5 @@ Suggestions on how to improve and make file sharing even more frictionless are w
 
 ## TODO
 - [ ] User friendly interface for discovery of magnet links to support inter-network transfer
+- [ ] Proper interface to easily download multiple files, perhaps a website or outputting a torrent file for torrent applications to manage
+- [ ] Allow host to customize link / Self generate a user-friendly url
