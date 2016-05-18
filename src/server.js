@@ -30,8 +30,9 @@ function reportDownloadSpeed(client) {
     }, 2000)
 }
 
-export default function (files, mock=false) {
+export default function (files, mock = false) {
     console.log('Seeding %s', files);
+    // Prototyping purposes
     if (mock) return;
     client.seed(files, { name: TORRENT_NAME }, function (torrent) {
         serve(torrent);

@@ -40,24 +40,20 @@ function getFilesRecursively(dir, maxDepth = -1) {
     })
 }
 
-cli.version('1.0.0');
-
-cli
-    .command('serve [files...]') // isDefault doesn't work properly with variadic commands, see https://github.com/tj/commander.js/issues/539
-    .alias('s')
+cli.version('1.0.0')
+    .usage('[files...]')
     .description('serves file(s)/directory specified. Defaults to current directory if none specified')
     .action((files) => {
-        console.log(files)
         if (!files || files.length == 0) {
             const items = getFilepathsFromDir(process.cwd());
-            serve(items, true);
+            serve(items);
             return;
         }
         const items = files.map((filename) => {
             return path.resolve(process.cwd(), filename)
         });
         // todo maybe check if path is valid
-        serve(items, true);
+        serve(items);
         return
     });
 
