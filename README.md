@@ -2,7 +2,7 @@
 Send files over your local network from the command line using [WebTorrent](https://github.com/feross/webtorrent). As of now a server is hosted so clients on the same network can connect to the host's IP.
 
 ## Installation
-`npm install -g rift`
+`npm install -g file-rift`
 
 ## Usage
 
