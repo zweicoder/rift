@@ -16,7 +16,7 @@ Seeding /home/pewpew/code/rift/files
 Torrenting now on 10.21.112.232:8080
 ```
 
-People on the same network can now download through the IP
+People on the same network can now access and download the files by visiting the IP address and port given.
 
 ## Development
 Git clone and install dependencies
