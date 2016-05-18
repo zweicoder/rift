@@ -1,8 +1,8 @@
 {
   "name": "rift",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "version": "0.0.1",
+  "description": "Send files via the command line using Webtorrent",
+  "main": "lib/server.js",
   "bin": {
     "rift": "./lib/cli.js"
   },
@@ -10,8 +10,26 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "watch": "babel src -d lib --watch"
   },
-  "author": "",
-  "license": "ISC",
+  "author": "zweicoder",
+   "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zweicoder/rift.git"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/zweicoder/rift/issues"
+  },
+  "homepage": "https://github.com/zweicoder/rift#readme",
+  "keywords": [
+    "send",
+    "files",
+    "cli",
+    "command",
+    "line",
+    "webrtc",
+    "webtorrent",
+    "awesome"
+  ],
   "dependencies": {
     "commander": "^2.9.0",
     "underscore": "^1.8.3",

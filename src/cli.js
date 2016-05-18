@@ -15,32 +15,7 @@ function getFilepathsFromDir(dir) {
     });
 }
 
-/**
- * Given some absolute paths, recursively explores directories and returns array of absolute file paths. Returns the input if it's not a directory.
- * @param paths
- * @param maxDepth  - max depth to traverse
- * @returns {Array|*|{type, data}}
- */
-function getFilesRecursively(dir, maxDepth = -1) {
-    const paths = getFilepathsFromDir(dir);
-    return paths.reduce((memo, _path)=> {
-        const stat = fs.statSync(_path);
-        if (stat.isFile()) {
-            return memo.concat(_path)
-        } else if (stat.isDirectory()) {
-            if (maxDepth > 0) {
-                return memo.concat(getFilesRecursively(_path, maxDepth - 1))
-            }
-            // Stop going deeper
-            return memo
-        } else {
-            console.log('Skipping unknown file at %s', _path);
-            return memo
-        }
-    })
-}
-
-cli.version('1.0.0')
+cli.version('0.0.1')
     .arguments('[files...]')
     .description('serves file(s)/directory specified. Defaults to current directory if none specified')
     .action((files) => {
